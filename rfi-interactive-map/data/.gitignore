@@ -1,0 +1,11 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Temporary exports and local validation output
+*.tmp
+*.log
+validation-report.json

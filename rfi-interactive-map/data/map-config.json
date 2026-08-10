@@ -1,0 +1,771 @@
+{
+  "mode": "repository",
+  "title": "LAF user map",
+  "generated_at": "2026-08-08",
+  "sources": {
+    "storage": "repository",
+    "source_folder": "source/laf-user-view-map",
+    "data_references": [
+      "source/laf-user-view-map/User map.qgz",
+      "source/laf-user-view-map/LaF border.geojson",
+      "source/laf-user-view-map/LAF_DEM_formap.geojson",
+      "source/laf-user-view-map/Bamboo.gpkg",
+      "source/laf-user-view-map/Conventional agriculture.gpkg",
+      "source/laf-user-view-map/Infrastructure.gpkg",
+      "source/laf-user-view-map/Pastures.gpkg",
+      "source/laf-user-view-map/RFI Howler Monkey Study Transects.geojson",
+      "source/laf-user-view-map/RFI_Howler_Monkey_Sighting_Points.geojson",
+      "source/laf-user-view-map/Riparian area.gpkg",
+      "source/laf-user-view-map/Secondary forest.gpkg",
+      "source/laf-user-view-map/syntropic with census.gpkg",
+      "source/laf-user-view-map/syntropic.gpkg",
+      "source/laf-user-view-map/Timber.gpkg",
+      "source/laf-user-view-map/rivers.geojson",
+      "qgis/rivers_reproj.geojson",
+      "media/infrastructure/cabanas.jpg",
+      "media/infrastructure/cabanas-2.jpg",
+      "media/infrastructure/cabanas-3.jpg",
+      "media/infrastructure/el-arbolito.jpg",
+      "media/infrastructure/el-arbolito-vertical.jpg",
+      "media/infrastructure/cacao-fermentation-storage-1.jpg",
+      "media/infrastructure/cacao-fermentation-storage-2.jpg",
+      "media/infrastructure/cow-stables-fid-7.jpg",
+      "media/infrastructure/farmkeepers-house.jpg",
+      "media/infrastructure/lookout-office-1.jpg",
+      "media/infrastructure/lookout-office-2.jpg",
+      "media/infrastructure/lucas-oshun-residence.jpg",
+      "media/infrastructure/main-building-1.jpg",
+      "media/infrastructure/main-building-2.jpg",
+      "media/infrastructure/massbu-microfactory.jpg",
+      "media/infrastructure/massbu-interior.jpg",
+      "media/infrastructure/massbu-microfactory-dng.jpg",
+      "media/infrastructure/stable.jpg",
+      "media/infrastructure/stable-2.jpg",
+      "media/landuse/syntropic/syntropic-1.jpg",
+      "media/landuse/syntropic/syntropic-de-mauro.jpg",
+      "media/landuse/syntropic/syntropic-2-1.jpg",
+      "media/landuse/syntropic/syntropic-2-2.jpg",
+      "media/landuse/syntropic/syntropic-2-3.jpg",
+      "media/landuse/syntropic/syntropic-2-4.jpg",
+      "media/landuse/syntropic/syntropic-2-5.jpg",
+      "media/landuse/syntropic/syntropic-3.jpg",
+      "media/landuse/syntropic/loma-nueva.jpg",
+      "media/landuse/syntropic/loma-de-la-cancha.jpg",
+      "media/landuse/syntropic/loma-de-amarillos-1.jpg",
+      "media/landuse/syntropic/loma-de-amarillos-2.jpg",
+      "media/landuse/syntropic/loma-de-amarillos-3.jpg",
+      "media/landuse/syntropic/moral-fino-1.jpg",
+      "media/landuse/syntropic/moral-fino-2.jpg",
+      "media/landuse/syntropic/loma-guachapeli-1.jpg",
+      "media/landuse/syntropic/loma-guachapeli-2.jpg",
+      "media/landuse/syntropic/loma-guachapeli-3.jpg",
+      "media/landuse/syntropic/loma-terraces-1.jpg",
+      "media/landuse/syntropic/loma-terraces-2.jpg",
+      "media/landuse/syntropic/loma-terraces-3.jpg",
+      "media/landuse/syntropic/loma-terraces-4.jpg",
+      "media/landuse/syntropic/loma-terraces-5.jpg",
+      "media/landuse/syntropic/loma-terraces-6.jpg",
+      "media/landuse/syntropic/loma-terraces-7.jpg",
+      "media/landuse/syntropic/loma-de-curcuma.jpg",
+      "media/landuse/syntropic/taller-de-mauro.jpg",
+      "media/landuse/syntropic/taller-de-mauro-2.jpg",
+      "media/landuse/conventional-agriculture/mandarin-cacao.jpg",
+      "media/landuse/conventional-agriculture/mandarin-cacao-secondary-forest.jpg",
+      "media/landuse/conventional-agriculture/mandarin-cacao-secondary-forest-2.jpg",
+      "media/landuse/conventional-agriculture/mandarin-cacao-west.jpg",
+      "media/landuse/conventional-agriculture/orange-cacao-1.jpg",
+      "media/landuse/conventional-agriculture/orange-cacao-2.jpg",
+      "media/landuse/pasture/pasture.jpg",
+      "media/landuse/pasture/pasture-se.jpg",
+      "media/landuse/pasture/silvopasture-1.jpg",
+      "media/landuse/pasture/silvopasture-2.jpg",
+      "media/landuse/pasture/pasture-terrazas.jpg",
+      "media/landuse/pasture/semango-pasture.jpg",
+      "media/landuse/secondary-forest/secondary-forest.jpg",
+      "media/landuse/secondary-forest/secondary-forest-next-to-teak.jpg",
+      "media/landuse/secondary-forest/bamboo-enriched-next-to-syntropic-3.jpg",
+      "media/landuse/timber/big-teak.jpg",
+      "media/landuse/timber/baby-teak-1.jpg",
+      "media/landuse/timber/baby-teak-2.jpg",
+      "media/landuse/timber/balsa-1.jpg",
+      "media/landuse/timber/balsa-2.jpg",
+      "media/landuse/infrastructure/water-reservoir.jpg"
+    ]
+  },
+  "basemaps": [
+    {
+      "id": "satellite-imagery",
+      "name": "Google satellite imagery",
+      "type": "xyz",
+      "url": "https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+      "visible": true,
+      "locked": true,
+      "max_zoom": 19,
+      "attribution": "Satellite imagery © Google"
+    }
+  ],
+  "layers": [
+    {
+      "id": "rfi-map-border",
+      "name": "RFI map border",
+      "type": "geojson",
+      "url": "laf-user-view-map/laf-border.geojson",
+      "source_reference": "source/laf-user-view-map/LaF border.geojson",
+      "visible": true,
+      "locked": true,
+      "primary_boundary": true,
+      "zoom_on_load": true,
+      "style": {
+        "kind": "boundary",
+        "color": "#0ecce1",
+        "weight": 3.63,
+        "opacity": 1,
+        "line_cap": "square",
+        "line_join": "bevel",
+        "qgis_renderer": "singleSymbol:SimpleLine",
+        "qgis_line_color_rgba": "14,204,225,255",
+        "qgis_line_width_mm": 0.96,
+        "qgis_line_style": "solid"
+      }
+    },
+    {
+      "id": "laf-dem-formap",
+      "name": "LAF elevation contours",
+      "type": "geojson",
+      "url": "laf-user-view-map/laf-dem-formap.geojson",
+      "source_reference": "source/laf-user-view-map/LAF_DEM_formap.geojson",
+      "visible": false,
+      "group": "Elevation and watershed",
+      "section": "contours",
+      "style": {
+        "kind": "elevation-bands",
+        "field": "ELEV_MAX",
+        "min": 49,
+        "max": 118,
+        "colours": [
+          "#d7191c",
+          "#fdae61",
+          "#ffffbf",
+          "#abdda4",
+          "#2b83ba"
+        ],
+        "outline_color": "#232323",
+        "weight": 0.245,
+        "opacity": 1,
+        "fill_opacity": 1,
+        "line_join": "bevel",
+        "qgis_renderer": "categorizedSymbol:ELEV_MAX"
+      },
+      "legend": {
+        "title": "Elevation (metres)",
+        "description": "Original QGIS ELEV_MAX categories from 49 to 118 metres.",
+        "stops": [
+          {"value": "49", "color": "#d7191c"},
+          {"value": "66", "color": "#fdae61"},
+          {"value": "84", "color": "#ffffbf"},
+          {"value": "101", "color": "#abdda4"},
+          {"value": "118", "color": "#2b83ba"}
+        ],
+        "low_label": "Lower elevation",
+        "high_label": "Higher elevation"
+      }
+    },
+    {
+      "id": "laf-river-network",
+      "name": "Rivers",
+      "type": "geojson",
+      "url": "qgis/rivers_reproj.geojson",
+      "source_reference": "source/laf-user-view-map/rivers.geojson",
+      "visible": false,
+      "group": "Elevation and watershed",
+      "section": "contours",
+      "style": {
+        "kind": "watershed-rivers",
+        "color": "#00d4ff",
+        "weight": 3.2,
+        "opacity": 1,
+        "line_cap": "round",
+        "line_join": "round"
+      },
+      "legend": {
+        "title": "Watershed",
+        "description": "Repository river-network lines shown with the elevation surface.",
+        "items": [
+          {"label": "River network", "shape": "line", "color": "#00d4ff"}
+        ]
+      }
+    },
+    {
+      "id": "laf-timber",
+      "name": "Timber",
+      "type": "geojson",
+      "url": "laf-user-view-map/timber.geojson",
+      "source_reference": "source/laf-user-view-map/Timber.gpkg",
+      "visible": true,
+      "group": "LAF user map",
+      "section": "land-use",
+      "popup": {
+        "media_by_name": {
+          "Big Teak": [{"type": "image", "name": "Big Teak", "url": "media/landuse/timber/big-teak.jpg", "alt": "Big Teak parcel at Los Arboles Farm"}],
+          "Balsa": [
+            {"type": "image", "name": "Balsa - image 1", "url": "media/landuse/timber/balsa-1.jpg", "alt": "First aerial view of the Balsa timber parcels at Los Arboles Farm"},
+            {"type": "image", "name": "Balsa - image 2", "url": "media/landuse/timber/balsa-2.jpg", "alt": "Second aerial view of the Balsa timber parcels at Los Arboles Farm"}
+          ],
+          "Baby teak": [
+            {"type": "image", "name": "Baby teak - image 1", "url": "media/landuse/timber/baby-teak-1.jpg", "alt": "First view of the Baby teak parcel at Los Arboles Farm"},
+            {"type": "image", "name": "Baby teak - image 2", "url": "media/landuse/timber/baby-teak-2.jpg", "alt": "Second view of the Baby teak parcel at Los Arboles Farm"}
+          ]
+        }
+      },
+      "style": {
+        "kind": "qgis-polygon",
+        "fill_color": "#a96952",
+        "fill_opacity": 0.75,
+        "outline_color": "#232323",
+        "weight": 1.2
+      }
+    },
+    {
+      "id": "laf-bamboo",
+      "name": "Bamboo",
+      "type": "geojson",
+      "url": "laf-user-view-map/bamboo.geojson",
+      "source_reference": "source/laf-user-view-map/Bamboo.gpkg",
+      "visible": true,
+      "interactive": false,
+      "show_in_legend": true,
+      "group": "LAF user map",
+      "section": "land-use",
+      "style": {
+        "kind": "qgis-line-pattern-fill",
+        "pattern_color": "#00ff51",
+        "pattern_angle": 45,
+        "pattern_crosshatch": false,
+        "pattern_spacing_px": 7.56,
+        "pattern_width_px": 1.13,
+        "pattern_dash_array": "4.52 2.26 1.13 2.26",
+        "fill_opacity": 1,
+        "outline_color": "#00ff51",
+        "weight": 1.74,
+        "opacity": 1,
+        "outline_dash_array": "6.96 3.48 1.74 3.48",
+        "line_cap": "square",
+        "line_join": "bevel",
+        "qgis_renderer": "singleSymbol",
+        "qgis_pattern_angle": 45,
+        "qgis_pattern_distance_mm": 2,
+        "qgis_pattern_symbol_width_mm": 0.26,
+        "qgis_pattern_line_width_mm": 0.3,
+        "qgis_outline_width_mm": 0.46,
+        "qgis_line_style": "dash dot"
+      }
+    },
+    {
+      "id": "laf-infrastructure",
+      "name": "Infrastructure",
+      "type": "geojson",
+      "url": "laf-user-view-map/infrastructure.geojson",
+      "source_reference": "source/laf-user-view-map/Infrastructure.gpkg",
+      "visible": true,
+      "group": "LAF user map",
+      "section": "land-use",
+      "popup": {
+        "hide_media_by_name": ["Main road"],
+        "hide_history_by_name": [
+          "Water tank",
+          "Cacao fermentation & storage facility",
+          "Massbu Microfactory",
+          "Farmkeepers house",
+          "Cow stables",
+          "Stables",
+          "Mirador",
+          "Lucas oshun residence",
+          "Main building"
+        ],
+        "media_by_name": {
+          "mirador": [
+            {"type": "image", "name": "Mirador - image 1", "url": "media/infrastructure/lookout-office-1.jpg", "alt": "First view of the mirador at Los Arboles Farm"},
+            {"type": "image", "name": "Mirador - image 2", "url": "media/infrastructure/lookout-office-2.jpg", "alt": "Second view of the mirador at Los Arboles Farm"}
+          ],
+          "main building": [
+            {"type": "image", "name": "Main building - image 1", "url": "media/infrastructure/main-building-1.jpg", "alt": "First view of the main building at Los Arboles Farm"},
+            {"type": "image", "name": "Main building - image 2", "url": "media/infrastructure/main-building-2.jpg", "alt": "Second view of the main building at Los Arboles Farm"}
+          ],
+          "Massbu Microfactory": [
+            {"type": "image", "name": "Massbu factory", "url": "media/infrastructure/massbu-microfactory.jpg", "alt": "Massbu factory at Los Arboles Farm"},
+            {"type": "image", "name": "Massbu interior", "url": "media/infrastructure/massbu-interior.jpg", "alt": "Interior of the Massbu Microfactory at Los Arboles Farm"},
+            {"type": "image", "name": "Massbu Microfactory", "url": "media/infrastructure/massbu-microfactory-dng.jpg", "alt": "Massbu Microfactory at Los Arboles Farm"}
+          ],
+          "farmkeepers house": [
+            {"type": "image", "name": "Farmkeeper's house", "url": "media/infrastructure/farmkeepers-house.jpg", "alt": "Farmkeeper's house at Los Arboles Farm"}
+          ],
+          "cow stables": [
+            {"type": "image", "name": "Cow stables", "url": "media/infrastructure/cow-stables-fid-7.jpg", "alt": "Cow stables in infrastructure polygon fid 7 at Los Arboles Farm"}
+          ],
+          "cacao fermentation & storage facility": [
+            {"type": "image", "name": "Cacao fermentation and storage - image 1", "url": "media/infrastructure/cacao-fermentation-storage-1.jpg", "alt": "First view of the cacao fermentation and storage facility at Los Arboles Farm"},
+            {"type": "image", "name": "Cacao fermentation and storage - image 2", "url": "media/infrastructure/cacao-fermentation-storage-2.jpg", "alt": "Second view of the cacao fermentation and storage facility at Los Arboles Farm"}
+          ],
+          "cabanas": [
+            {"type": "image", "name": "Cabanas - image 1", "url": "media/infrastructure/cabanas.jpg", "alt": "First view of the cabanas at Los Arboles Farm"},
+            {"type": "image", "name": "Cabanas - image 2", "url": "media/infrastructure/cabanas-2.jpg", "alt": "Second view of the cabanas at Los Arboles Farm"},
+            {"type": "image", "name": "Cabanas - image 3", "url": "media/infrastructure/cabanas-3.jpg", "alt": "Third view of the cabanas at Los Arboles Farm"}
+          ],
+          "Stables": [
+            {"type": "image", "name": "Stables", "url": "media/infrastructure/stable.jpg", "alt": "First view of the stables in infrastructure polygon fid 10 at Los Arboles Farm"},
+            {"type": "image", "name": "Stables - image 2", "url": "media/infrastructure/stable-2.jpg", "alt": "Second view of the stables in infrastructure polygon fid 10 at Los Arboles Farm"}
+          ],
+          "lucas oshun residence": [
+            {"type": "image", "name": "Lucas Oshun residence", "url": "media/infrastructure/lucas-oshun-residence.jpg", "alt": "Lucas Oshun residence at Los Arboles Farm"}
+          ],
+          "El Arbolito": [
+            {"type": "image", "name": "El Arbolito", "url": "media/infrastructure/el-arbolito.jpg", "alt": "El Arbolito garden at Los Arboles Farm"},
+            {"type": "image", "name": "El Arbolito vertical", "url": "media/infrastructure/el-arbolito-vertical.jpg", "alt": "Vertical aerial view of the El Arbolito garden at Los Arboles Farm"}
+          ],
+          "Water tank": [
+            {"type": "image", "name": "Water reservoir", "url": "media/landuse/infrastructure/water-reservoir.jpg", "alt": "Water reservoir at Los Arboles Farm"}
+          ]
+        }
+      },
+      "style": {
+        "kind": "qgis-polygon",
+        "fill_color": "#f3a6b2",
+        "fill_opacity": 0.75,
+        "outline_color": "#232323",
+        "weight": 1.2
+      }
+    },
+    {
+      "id": "laf-secondary-forest",
+      "name": "Secondary forest",
+      "type": "geojson",
+      "url": "laf-user-view-map/secondary-forest.geojson",
+      "source_reference": "source/laf-user-view-map/Secondary forest.gpkg",
+      "visible": true,
+      "group": "LAF user map",
+      "section": "land-use",
+      "popup": {
+        "media_by_feature_index": {
+          "1": [{"type": "image", "name": "Secondary forest", "url": "media/landuse/secondary-forest/secondary-forest.jpg", "alt": "Secondary forest at Los Arboles Farm"}],
+          "2": [{"type": "image", "name": "Bamboo-enriched forest", "url": "media/landuse/secondary-forest/bamboo-enriched-next-to-syntropic-3.jpg", "alt": "Bamboo-enriched secondary forest beside Syntropic 3 at Los Arboles Farm"}],
+          "3": [{"type": "image", "name": "Secondary forest beside teak", "url": "media/landuse/secondary-forest/secondary-forest-next-to-teak.jpg", "alt": "Secondary forest beside the teak parcels at Los Arboles Farm"}]
+        }
+      },
+      "style": {
+        "kind": "qgis-polygon",
+        "fill_color": "#00882a",
+        "fill_opacity": 0.75,
+        "outline_color": "#232323",
+        "weight": 1.2
+      }
+    },
+    {
+      "id": "laf-pastures",
+      "name": "Pastures",
+      "type": "geojson",
+      "url": "laf-user-view-map/pastures.geojson",
+      "source_reference": "source/laf-user-view-map/Pastures.gpkg",
+      "visible": true,
+      "group": "LAF user map",
+      "section": "land-use",
+      "popup": {
+        "media_by_name": {
+          "Pasture": [{"type": "image", "name": "Pasture", "url": "media/landuse/pasture/pasture.jpg", "alt": "Pasture at Los Arboles Farm"}],
+          "Pasture SE": [{"type": "image", "name": "Pasture SE", "url": "media/landuse/pasture/pasture-se.jpg", "alt": "Southeastern pasture at Los Arboles Farm"}],
+          "Silvopasture": [
+            {"type": "image", "name": "Silvopasture - image 1", "url": "media/landuse/pasture/silvopasture-1.jpg", "alt": "First view of the silvopasture at Los Arboles Farm"},
+            {"type": "image", "name": "Silvopasture - image 2", "url": "media/landuse/pasture/silvopasture-2.jpg", "alt": "Second view of the silvopasture at Los Arboles Farm"}
+          ],
+          "Pasture terrazas": [{"type": "image", "name": "Pasture terrazas", "url": "media/landuse/pasture/pasture-terrazas.jpg", "alt": "Terraced pasture at Los Arboles Farm"}],
+          "Semango Pasture": [{"type": "image", "name": "Semango Pasture", "url": "media/landuse/pasture/semango-pasture.jpg", "alt": "Aerial view of Semango Pasture at Los Arboles Farm"}]
+        }
+      },
+      "style": {
+        "kind": "qgis-polygon",
+        "fill_color": "#e5b636",
+        "fill_opacity": 0.75,
+        "outline_color": "#232323",
+        "weight": 1.2
+      }
+    },
+    {
+      "id": "laf-riparian-area",
+      "name": "Riparian area (10 m)",
+      "type": "geojson",
+      "url": "laf-user-view-map/riparian-area.geojson",
+      "source_reference": "source/laf-user-view-map/Riparian area.gpkg",
+      "visible": true,
+      "group": "LAF user map",
+      "section": "land-use",
+      "popup": {
+        "title": "Riparian area",
+        "description": "Riparian areas are transition zones along watercourses or water bodies. Their soils and vegetation are strongly influenced by nearby water, and they connect terrestrial and aquatic ecosystems. Typical examples include streambanks, floodplains, and lakeshores.",
+        "description_source": "USDA Natural Resources Conservation Service, General Manual Part 411",
+        "description_source_url": "https://directives.nrcs.usda.gov/sites/default/files2/1712929042/Part%20411%20-%20Riparian%20Area%20Recognition%20and%20Management.pdf",
+        "hide_media": true,
+        "hide_composition": true,
+        "hide_history": true
+      },
+      "style": {
+        "kind": "qgis-line-pattern-fill",
+        "pattern_color": "#1b87dd",
+        "pattern_angle": 135,
+        "pattern_crosshatch": false,
+        "pattern_spacing_px": 7.56,
+        "pattern_width_px": 1.13,
+        "fill_opacity": 0.75,
+        "outline_color": "#00bcff",
+        "weight": 1.89,
+        "opacity": 1,
+        "line_cap": "square",
+        "line_join": "bevel",
+        "qgis_pattern_distance_mm": 2,
+        "qgis_pattern_symbol_width_mm": 0.26,
+        "qgis_pattern_line_width_mm": 0.3,
+        "qgis_outline_width_mm": 0.5
+      }
+    },
+    {
+      "id": "laf-conventional-agriculture",
+      "name": "Conventional agriculture",
+      "type": "geojson",
+      "url": "laf-user-view-map/conventional-agriculture.geojson",
+      "source_reference": "source/laf-user-view-map/Conventional agriculture.gpkg",
+      "visible": true,
+      "group": "LAF user map",
+      "section": "land-use",
+      "popup": {
+        "media_by_name": {
+          "Mandarin-cacao": [
+            {"type": "image", "name": "Mandarin and cacao", "url": "media/landuse/conventional-agriculture/mandarin-cacao.jpg", "alt": "Mandarin and cacao parcel at Los Arboles Farm"},
+            {"type": "image", "name": "Mandarin and cacao western parcel", "url": "media/landuse/conventional-agriculture/mandarin-cacao-west.jpg", "alt": "Aerial view of the western Mandarin and cacao parcel at Los Arboles Farm"}
+          ],
+          "Mandarin Cacao": [
+            {"type": "image", "name": "Mandarin and cacao", "url": "media/landuse/conventional-agriculture/mandarin-cacao.jpg", "alt": "Mandarin and cacao parcel at Los Arboles Farm"},
+            {"type": "image", "name": "Mandarin and cacao beside secondary forest", "url": "media/landuse/conventional-agriculture/mandarin-cacao-secondary-forest.jpg", "alt": "Aerial view of the Mandarin and cacao parcel beside secondary forest at Los Arboles Farm"},
+            {"type": "image", "name": "Mandarin and cacao beside secondary forest - image 2", "url": "media/landuse/conventional-agriculture/mandarin-cacao-secondary-forest-2.jpg", "alt": "Second aerial view of the Mandarin and cacao parcel beside secondary forest at Los Arboles Farm"}
+          ],
+          "Orange & Cacao": [
+            {"type": "image", "name": "Orange and cacao - image 1", "url": "media/landuse/conventional-agriculture/orange-cacao-1.jpg", "alt": "First view of the orange and cacao parcel at Los Arboles Farm"},
+            {"type": "image", "name": "Orange and cacao - image 2", "url": "media/landuse/conventional-agriculture/orange-cacao-2.jpg", "alt": "Second view of the orange and cacao parcel at Los Arboles Farm"}
+          ]
+        }
+      },
+      "style": {
+        "kind": "qgis-polygon",
+        "fill_color": "#b7093f",
+        "fill_opacity": 0.75,
+        "outline_color": "#232323",
+        "weight": 1.2
+      }
+    },
+    {
+      "id": "laf-syntropic",
+      "name": "Syntropic",
+      "type": "geojson",
+      "url": "laf-user-view-map/syntropic.geojson",
+      "source_reference": "source/laf-user-view-map/syntropic with census.gpkg",
+      "visible": true,
+      "group": "LAF user map",
+      "section": "land-use",
+      "popup": {
+        "census_strata_by_species": {
+          "Cacao": {"source": "Middle", "display": "Medium"},
+          "Inga": {"source": "high", "display": "High"},
+          "Glyricidia": {"source": "high", "display": "High"},
+          "Trichanthera": {"source": "variable", "display": "Low"},
+          "Jackfruit": {"source": "high", "display": "High"},
+          "Amarillo": {"source": "Emergent", "display": "Emergent"},
+          "Avocado": {"source": "high", "display": "High"},
+          "Acacia Mangium": {"source": "high", "display": "High"},
+          "Soursop": {"source": "high", "display": "High"},
+          "Citrus": {"source": "mid", "display": "Medium"},
+          "Mango": {"source": "high", "display": "High"},
+          "Brazillian Fern Tree": {"source": "Emergent", "display": "Emergent"},
+          "Eucalyptus": {"source": "Emergent", "display": "Emergent"},
+          "Papaya": {"source": "Emergent", "display": "Emergent"},
+          "Teak": {"source": "Emergent", "display": "Emergent"},
+          "coconut": {"source": "Emergent", "display": "Emergent"},
+          "pachiche": {"source": "high", "display": "High"},
+          "caucho": {"source": "mid", "display": "Medium"},
+          "Gmelina": {"source": "Emergent", "display": "Emergent"},
+          "guachapeli": {"source": "Emergent", "display": "Emergent"},
+          "leucaena": {"source": "Emergent", "display": "Emergent"},
+          "Fernan Sanchez": {"source": "Emergent", "display": "Emergent"},
+          "Jaboncillo": {"source": "mid/high", "display": "High"},
+          "Plantain/ Banana": {"source": "Emergent", "display": "Emergent"},
+          "Moral Fino": {"source": "high", "display": "High"},
+          "Mulchi": {"source": "mid", "display": "Medium"},
+          "Sumango": {"source": "emergent", "display": "Emergent"}
+        },
+        "media_by_name": {
+          "Syntropic 1": [
+            {
+              "type": "image",
+              "name": "Syntropic 1",
+              "url": "media/landuse/syntropic/syntropic-1.jpg",
+              "alt": "Continuation of the Syntropic 1 plot at Los Arboles Farm"
+            }
+          ],
+          "Syntropic 2": [
+            {
+              "type": "image",
+              "name": "Syntropic 2 - image 1",
+              "url": "media/landuse/syntropic/syntropic-2-1.jpg",
+              "alt": "Continuation of the Syntropic 2 plot at Los Arboles Farm, first view"
+            },
+            {
+              "type": "image",
+              "name": "Syntropic 2 - image 2",
+              "url": "media/landuse/syntropic/syntropic-2-2.jpg",
+              "alt": "Continuation of the Syntropic 2 plot at Los Arboles Farm, second view"
+            },
+            {
+              "type": "image",
+              "name": "Syntropic 2 - image 3",
+              "url": "media/landuse/syntropic/syntropic-2-3.jpg",
+              "alt": "Continuation of the Syntropic 2 plot at Los Arboles Farm, third view"
+            },
+            {
+              "type": "image",
+              "name": "Syntropic 2 - image 4",
+              "url": "media/landuse/syntropic/syntropic-2-4.jpg",
+              "alt": "Continuation of the Syntropic 2 plot at Los Arboles Farm, fourth view"
+            },
+            {
+              "type": "image",
+              "name": "Syntropic 2 - image 5",
+              "url": "media/landuse/syntropic/syntropic-2-5.jpg",
+              "alt": "Continuation of the Syntropic 2 plot at Los Arboles Farm, fifth view"
+            }
+          ],
+          "syntropic 3": [
+            {
+              "type": "image",
+              "name": "Syntropic 3",
+              "url": "media/landuse/syntropic/syntropic-3.jpg",
+              "alt": "Continuation of the Syntropic 3 plot at Los Arboles Farm"
+            }
+          ],
+          "Loma Nueva": [
+            {"type": "image", "name": "Loma Nueva", "url": "media/landuse/syntropic/loma-nueva.jpg", "alt": "Loma Nueva syntropic parcel at Los Arboles Farm"}
+          ],
+          "Loma de La Cancha": [
+            {"type": "image", "name": "Loma de La Cancha", "url": "media/landuse/syntropic/loma-de-la-cancha.jpg", "alt": "Loma de La Cancha syntropic parcel at Los Arboles Farm"}
+          ],
+          "Loma de Amarillos": [
+            {"type": "image", "name": "Loma de Amarillos - image 1", "url": "media/landuse/syntropic/loma-de-amarillos-1.jpg", "alt": "First aerial view of Loma de Amarillos at Los Arboles Farm"},
+            {"type": "image", "name": "Loma de Amarillos - image 2", "url": "media/landuse/syntropic/loma-de-amarillos-2.jpg", "alt": "Second aerial view of Loma de Amarillos at Los Arboles Farm"},
+            {"type": "image", "name": "Loma de Amarillos - image 3", "url": "media/landuse/syntropic/loma-de-amarillos-3.jpg", "alt": "Third aerial view of Loma de Amarillos at Los Arboles Farm"}
+          ],
+          "Moral Fino": [
+            {"type": "image", "name": "Moral Fino - image 1", "url": "media/landuse/syntropic/moral-fino-1.jpg", "alt": "First aerial view of Moral Fino at Los Arboles Farm"},
+            {"type": "image", "name": "Moral Fino - image 2", "url": "media/landuse/syntropic/moral-fino-2.jpg", "alt": "Second aerial view of Moral Fino at Los Arboles Farm"}
+          ],
+          "Loma Guachapeli": [
+            {"type": "image", "name": "Loma Guachapeli - image 1", "url": "media/landuse/syntropic/loma-guachapeli-1.jpg", "alt": "First aerial view of Loma Guachapeli at Los Arboles Farm"},
+            {"type": "image", "name": "Loma Guachapeli - image 2", "url": "media/landuse/syntropic/loma-guachapeli-2.jpg", "alt": "Second aerial view of Loma Guachapeli at Los Arboles Farm"},
+            {"type": "image", "name": "Loma Guachapeli - image 3", "url": "media/landuse/syntropic/loma-guachapeli-3.jpg", "alt": "Third aerial view of Loma Guachapeli at Los Arboles Farm"}
+          ],
+          "Loma Terraces": [
+            {"type": "image", "name": "Loma Terraces - image 1", "url": "media/landuse/syntropic/loma-terraces-1.jpg", "alt": "First aerial view of Loma Terraces at Los Arboles Farm"},
+            {"type": "image", "name": "Loma Terraces - image 2", "url": "media/landuse/syntropic/loma-terraces-2.jpg", "alt": "Second aerial view of Loma Terraces at Los Arboles Farm"},
+            {"type": "image", "name": "Loma Terraces - image 3", "url": "media/landuse/syntropic/loma-terraces-3.jpg", "alt": "Third aerial view of Loma Terraces at Los Arboles Farm"},
+            {"type": "image", "name": "Loma Terraces - image 4", "url": "media/landuse/syntropic/loma-terraces-4.jpg", "alt": "Fourth aerial view of Loma Terraces at Los Arboles Farm"},
+            {"type": "image", "name": "Loma Terraces - image 5", "url": "media/landuse/syntropic/loma-terraces-5.jpg", "alt": "Fifth aerial view of Loma Terraces at Los Arboles Farm"},
+            {"type": "image", "name": "Loma Terraces - image 6", "url": "media/landuse/syntropic/loma-terraces-6.jpg", "alt": "Sixth aerial view of Loma Terraces at Los Arboles Farm"},
+            {"type": "image", "name": "Loma Terraces - image 7", "url": "media/landuse/syntropic/loma-terraces-7.jpg", "alt": "Seventh aerial view of Loma Terraces at Los Arboles Farm"}
+          ],
+          "Loma de Curcuma": [
+            {"type": "image", "name": "Loma de los Aguacates", "url": "media/landuse/syntropic/loma-de-curcuma.jpg", "alt": "Aerial view of the Loma de Curcuma and avocado parcel at Los Arboles Farm"}
+          ],
+          "Syntropic Taller de mauro": [
+            {"type": "image", "name": "Taller de Mauro", "url": "media/landuse/syntropic/taller-de-mauro.jpg", "alt": "Taller de Mauro syntropic parcel at Los Arboles Farm"},
+            {"type": "image", "name": "Syntropic de Mauro", "url": "media/landuse/syntropic/syntropic-de-mauro.jpg", "alt": "Syntropic de Mauro parcel at Los Arboles Farm"}
+          ],
+          "syntropic taller de mauro 2": [
+            {"type": "image", "name": "Taller de Mauro 2", "url": "media/landuse/syntropic/taller-de-mauro-2.jpg", "alt": "Second Taller de Mauro syntropic parcel at Los Arboles Farm"}
+          ]
+        }
+      },
+      "style": {
+        "kind": "qgis-polygon",
+        "fill_color": "#987db7",
+        "fill_opacity": 0.75,
+        "outline_color": "#232323",
+        "weight": 1.2
+      }
+    },
+    {
+      "id": "howler-monkey-study-transects",
+      "name": "Howler monkey study transects",
+      "type": "geojson",
+      "url": "laf-user-view-map/howler-monkey-study-transects.geojson",
+      "source_reference": "source/laf-user-view-map/RFI Howler Monkey Study Transects.geojson",
+      "visible": false,
+      "group": "Monkey study",
+      "section": "monkey-study",
+      "style": {
+        "kind": "monkey-transects",
+        "color": "#fab519",
+        "color_field": "color",
+        "fallback_color": "#fab519",
+        "feature_colors": {
+          "T1": "#00E5FF",
+          "T2": "#FF4FD8",
+          "T3": "#FFE34D"
+        },
+        "weight": 1.18,
+        "opacity": 1,
+        "line_cap": "square",
+        "line_join": "bevel",
+        "qgis_renderer": "singleSymbol",
+        "qgis_line_width_mm": 0.26,
+        "display_width_multiplier": 1.2
+      }
+    },
+    {
+      "id": "howler-monkey-sighting-points",
+      "name": "Howler monkey sighting heatmap",
+      "type": "geojson",
+      "url": "laf-user-view-map/howler-monkey-sighting-points.geojson",
+      "source_reference": "source/laf-user-view-map/RFI_Howler_Monkey_Sighting_Points.geojson",
+      "visible": false,
+      "group": "Monkey study",
+      "section": "monkey-study",
+      "style": {
+        "kind": "monkey-heatmap",
+        "radius": 38,
+        "point_alpha": 0.18,
+        "max_intensity": 0,
+        "opacity": 1,
+        "colours": ["#fff5f0", "#fee0d2", "#fcbba1", "#fc9272", "#fb6a4a", "#ef3b2c", "#cb181d", "#a50f15", "#67000d"],
+        "colour_alphas": [0, 166, 255, 255, 255, 255, 255, 255, 255],
+        "qgis_renderer": "heatmapRenderer",
+        "qgis_radius_mm": 10,
+        "qgis_quality": 3,
+        "qgis_weight_expression": "",
+        "qgis_max_value": 0
+      },
+      "legend": {
+        "title": "Monkey study",
+        "description": "QGIS-matched density surface calculated from the 12 recorded howler-monkey sighting locations.",
+        "items": [
+          {"label": "Transect T1", "shape": "line", "color": "#00E5FF"},
+          {"label": "Transect T2", "shape": "line", "color": "#FF4FD8"},
+          {"label": "Transect T3", "shape": "line", "color": "#FFE34D"},
+          {"label": "Frequency of monkey observations", "shape": "heat", "colours": ["#fff5f0", "#fee0d2", "#fcbba1", "#fc9272", "#fb6a4a", "#ef3b2c", "#cb181d", "#a50f15", "#67000d"], "low_label": "Minimum", "high_label": "Maximum"}
+        ]
+      }
+    }
+  ],
+  "environmental_health": {
+    "section": "environmental-health-analysis",
+    "source": "Repository-derived MODIS Aqua surface-reflectance composites",
+    "years": [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026],
+    "bounds": [
+      [-0.5790799733321994, -80.04992300330532],
+      [-0.5666666666123809, -80.0375096965855]
+    ],
+    "opacity": 0.72,
+    "analyses": [
+      {
+        "id": "ndvi",
+        "metric": "NDVI",
+        "name": "NDVI",
+        "timeline_url": "satellite/timeline/ndvi_{year}.png",
+        "legend": {
+          "title": "NDVI",
+          "description": "Shows how green and actively growing the vegetation is. Higher values usually mean denser, healthier plant cover. Lower values may indicate bare soil, water, recently cleared land, or stressed vegetation.",
+          "stops": [
+            {"value": "-0.20", "color": "#be1e1e"},
+            {"value": "0.10", "color": "#eb781e"},
+            {"value": "0.30", "color": "#f5d737"},
+            {"value": "0.55", "color": "#73b937"},
+            {"value": "0.90", "color": "#00692d"}
+          ],
+          "low_label": "Less healthy",
+          "high_label": "More healthy"
+        }
+      },
+      {
+        "id": "evi",
+        "metric": "EVI",
+        "name": "EVI",
+        "timeline_url": "satellite/timeline/evi_{year}.png",
+        "legend": {
+          "title": "EVI",
+          "description": "Shows how strongly vegetation is growing, especially where plant cover is thick. It is similar to NDVI but is better at showing differences in dense vegetation and is less affected by haze or visible soil.",
+          "stops": [
+            {"value": "-0.20", "color": "#be1e1e"},
+            {"value": "0.05", "color": "#eb781e"},
+            {"value": "0.25", "color": "#f5d737"},
+            {"value": "0.45", "color": "#73b937"},
+            {"value": "0.80", "color": "#00692d"}
+          ],
+          "low_label": "Less healthy",
+          "high_label": "More healthy"
+        }
+      },
+      {
+        "id": "mir-reflectance",
+        "metric": "MIR_reflectance",
+        "name": "MIR reflectance (dryness proxy)",
+        "timeline_url": "satellite/timeline/mir_reflectance_{year}.png",
+        "legend": {
+          "title": "MIR reflectance (dryness proxy)",
+          "description": "Highlights how dry or exposed the land surface is. Higher values usually mean drier vegetation, bare soil, or less moisture. Lower values usually indicate wetter ground or denser plant cover.",
+          "stops": [
+            {"value": "0.00", "color": "#00692d"},
+            {"value": "0.12", "color": "#73b937"},
+            {"value": "0.25", "color": "#f5d737"},
+            {"value": "0.38", "color": "#eb781e"},
+            {"value": "0.50", "color": "#be1e1e"}
+          ],
+          "low_label": "More healthy",
+          "high_label": "Less healthy"
+        }
+      },
+      {
+        "id": "ndmi",
+        "metric": "NDMI",
+        "name": "NDMI (canopy/soil moisture)",
+        "timeline_url": "satellite/timeline/ndmi_{year}.png",
+        "legend": {
+          "title": "NDMI (canopy/soil moisture)",
+          "description": "Shows how much moisture is held in vegetation and the near-surface land. Higher values indicate wetter plant canopies and ground conditions, while lower values suggest dryness or possible water stress.",
+          "stops": [
+            {"value": "-0.50", "color": "#be1e1e"},
+            {"value": "-0.10", "color": "#eb781e"},
+            {"value": "0.15", "color": "#f5d737"},
+            {"value": "0.35", "color": "#73b937"},
+            {"value": "0.60", "color": "#00692d"}
+          ],
+          "low_label": "Less healthy",
+          "high_label": "More healthy"
+        }
+      },
+      {
+        "id": "health-score",
+        "metric": "Health_score",
+        "name": "Plant + soil health score",
+        "timeline_url": "satellite/timeline/health_score_{year}.png",
+        "legend": {
+          "title": "Plant + soil health score",
+          "description": "A combined score using greenness, vegetation vigor, moisture, and inverse dryness. Green represents healthier conditions and red represents less healthy conditions.",
+          "stops": [
+            {"value": "0.00", "color": "#be1e1e"},
+            {"value": "0.30", "color": "#eb781e"},
+            {"value": "0.50", "color": "#f5d737"},
+            {"value": "0.70", "color": "#73b937"},
+            {"value": "1.00", "color": "#00692d"}
+          ],
+          "low_label": "Less healthy",
+          "high_label": "More healthy"
+        }
+      }
+    ]
+  },
+  "satellite_assets": [],
+  "notices": []
+}

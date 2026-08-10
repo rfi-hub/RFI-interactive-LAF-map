@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/rfi-map/map-config.schema.json",
+  "title": "RFI map manifest",
+  "type": "object",
+  "required": ["layers"],
+  "properties": {
+    "mode": { "type": "string" },
+    "title": { "type": "string" },
+    "basemaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "type", "url"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "type": { "const": "xyz" },
+          "url": { "type": "string", "minLength": 1 },
+          "visible": { "type": "boolean" },
+          "max_zoom": { "type": "integer", "minimum": 0 },
+          "attribution": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "layers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "type"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "type": { "enum": ["geojson", "xyz"] },
+          "url": { "type": "string", "pattern": "^(?!https?://).*" },
+          "visible": { "type": "boolean" },
+          "group": { "type": "string" },
+          "section": { "enum": ["land-use", "contours", "monkey-study", "environmental-health-analysis"] },
+          "opacity": { "type": "number", "minimum": 0, "maximum": 1 }
+        },
+        "additionalProperties": true
+      }
+    },
+    "satellite_assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "kind", "format"],
+        "properties": {
+          "section": { "enum": ["land-use", "contours", "monkey-study", "environmental-health-analysis"] }
+        },
+        "additionalProperties": true
+      }
+    },
+    "environmental_health": {
+      "type": "object",
+      "required": ["section", "years", "bounds", "analyses"],
+      "properties": {
+        "section": { "const": "environmental-health-analysis" },
+        "years": { "type": "array", "items": { "type": "integer" } },
+        "bounds": { "type": "array", "minItems": 2, "maxItems": 2 },
+        "opacity": { "type": "number", "minimum": 0, "maximum": 1 },
+        "analyses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "metric", "name", "timeline_url", "legend"],
+            "properties": {
+              "timeline_url": { "type": "string", "pattern": "^(?!https?://).*\\{year\\}.*" }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "notices": { "type": "array" }
+  },
+  "additionalProperties": true
+}

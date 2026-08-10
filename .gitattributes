@@ -1,2 +1,25 @@
-# Auto detect text files and perform LF normalization
 * text=auto
+
+*.py      text eol=lf
+*.js      text eol=lf
+*.css     text eol=lf
+*.html    text eol=lf
+*.php     text eol=lf
+*.md      text eol=lf
+*.json    text eol=lf
+*.geojson text eol=lf
+*.csv     text eol=lf
+*.xml     text eol=lf
+
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.webp binary
+*.tif  binary
+*.tiff binary
+*.gpkg binary
+*.zip  binary
+*.mp4  binary
+*.MP4  binary
+*.lrf  binary
+*.LRF  binary

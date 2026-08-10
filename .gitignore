@@ -1,0 +1,43 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local settings and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.aux.xml
+~$*
+.codex-tmp-*/
+
+# Working data and superseded analysis outputs are backed up outside the
+# deployable repository. Only manifest-referenced copies belong under
+# rfi-interactive-map/data/.
+GEE_data/
+gee/
+outputs/
+laf-drone-parcel-timeline/
+*.gpkg-shm
+*.gpkg-wal
+
+# Drone source videos can be very large. Store them with Git LFS or external
+# object storage; telemetry sidecars and derived reports can remain in Git.
+flights/**/*.MP4
+flights/**/*.mp4
+flights/**/*.LRF
+flights/**/*.lrf

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RFI Interactive Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="assets/rfi-map.css?v=20260809-69">
+  <style>
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #dce6df; }
+    .map-shell { width: 100%; height: 100%; }
+    .map-shell > .rfi-map { border: 0; border-radius: 0; box-shadow: none; }
+  </style>
+</head>
+<body>
+  <main class="map-shell">
+    <section class="rfi-map" style="--rfi-map-height:100vh" data-config-url="data/map-config.json?v=20260809-69" aria-label="RFI interactive map">
+      <div class="rfi-map__canvas" aria-label="Interactive map"></div>
+      <nav class="rfi-map__sections" aria-label="Map sections">
+        <button type="button" class="rfi-map__section-tab" data-rfi-section="land-use" aria-pressed="true">Land use</button>
+        <button type="button" class="rfi-map__section-tab" data-rfi-section="contours" aria-pressed="false">Elevation and watershed</button>
+        <button type="button" class="rfi-map__section-tab" data-rfi-section="monkey-study" aria-pressed="false">Monkey study</button>
+        <button type="button" class="rfi-map__section-tab" data-rfi-section="environmental-health-analysis" aria-pressed="false">Environmental health analysis</button>
+      </nav>
+      <span class="rfi-map__status screen-reader-text" role="status" aria-live="polite">Loading map data…</span>
+      <div class="rfi-map__layer-store" hidden aria-hidden="true">
+        <div class="rfi-map__layers"></div>
+        <div class="rfi-map__assets"></div>
+      </div>
+      <div class="rfi-map__loading" aria-hidden="true"><span></span></div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="assets/leaflet-rotate.js?v=20260809-69"></script>
+  <script src="assets/rfi-map.js?v=20260809-69"></script>
+</body>
+</html>
