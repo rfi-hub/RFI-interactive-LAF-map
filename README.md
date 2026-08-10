@@ -11,8 +11,8 @@ From the repository root:
 py .\serve_rfi_map.py --map-dir .\rfi-interactive-map
 ```
 
-- End-user view: `http://127.0.0.1:8000/`
-- Developer/test view: `http://127.0.0.1:8000/preview/`
+- End-user view: `http://local-ip-address/`
+- Developer/test view: `http://local-ip-address/preview/`
 
 Both pages use the same JavaScript, CSS, configuration, and tracked map data.
 
